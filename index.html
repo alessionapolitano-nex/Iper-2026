@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calcolatore – Iperammortamento 2026</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <img id="brandLogo" class="logo" src="assets/logo.png" alt="Logo" />
+      <div>
+        <div class="brand-title" id="brandTitle">Il tuo Studio</div>
+        <div class="brand-subtitle" id="brandSubtitle">Calcolatore Iperammortamento 2026</div>
+      </div>
+    </div>
+    <button id="recalcBtn" class="btn">Ricalcola</button>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Prompt / Configurazione</h2>
+      <p class="muted">
+        Incolla qui la configurazione del tool (tipo “prompt”), poi premi <b>Applica</b>.
+      </p>
+
+      <textarea id="promptBox" class="prompt" spellcheck="false"></textarea>
+      <div class="row">
+        <button id="applyPromptBtn" class="btn primary">Applica</button>
+        <button id="resetPromptBtn" class="btn ghost">Ripristina esempio</button>
+      </div>
+      <div id="promptError" class="error" hidden></div>
+    </section>
+
+    <section class="grid">
+      <section class="card">
+        <h2>Dati</h2>
+        <div id="formArea" class="form"></div>
+      </section>
+
+      <section class="card">
+        <h2>Risultati</h2>
+        <div id="resultArea" class="results"></div>
+      </section>
+    </section>
+
+    <section class="card">
+      <h2>Tabella</h2>
+      <div id="tableArea" class="tableWrap"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
